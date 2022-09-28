@@ -8,7 +8,7 @@ const Cosmetic = (props) => {
     const addToCart = (id) =>{
         addToDb(id);
     }
-
+// const addToCartWithPram = () => addToCart(id)
     const removeFromCart = id =>{
         removeFromDb(id);
     }
@@ -20,8 +20,11 @@ const Cosmetic = (props) => {
             <p><small>it has id: {id}</small></p>
             <button onClick={() => addToCart(id)}>Add to Cart</button>
             <button onClick={() => removeFromCart(id)}>Remove</button>
+            
         </div>
     );
 };
 
 export default Cosmetic;
+
+// <button onClick={() => addToCart(id)}>Add to Cart</button>
